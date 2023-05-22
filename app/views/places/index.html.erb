@@ -1,0 +1,14 @@
+<h1> Travel Diaries </h1>
+<p> Let's create  travel story for your city! </p>
+<ul>
+  <% for place in @places %>
+    <li>
+      <a href="/places/<%= place["id"] %>">
+        <%= place["name"] %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+<p>
+  <a href="places/new"> <b> Add a new place </b> </a>
+</p>
